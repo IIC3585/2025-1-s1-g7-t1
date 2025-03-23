@@ -4,6 +4,8 @@
 > - Juan Palma
 > - Giacomo Pasquali
 
+Desarrollar funciones que permitan convertir un archivo CSV en otro de acuerdo a lo especificado.
+
 Funciones a desarrollar:
 - InsertRow **_JP_**
 - InsertColumn **_JP_**
