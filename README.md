@@ -19,7 +19,7 @@ Funciones a desarrollar:
 Aproach es funcional como paradigma de programación:
 
 - _Iterators_ y _Generators_
-- Uso de la librería _Lodash_
+- Uso de la librería _[Lodash](https://lodash.com/docs/4.17.15)_
 - _Currying_ y _partial evaluation_
 - Composición y _Pipes_
 - _Chaining_
