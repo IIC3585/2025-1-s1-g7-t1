@@ -62,14 +62,14 @@ export const transformToHTMLTable = (file) => {
     const data = readCSV(file);
     const newData = 
         `<table>\n` +
-        _.join(_.map(data, (row) => 
+        _.join(
+            _.map(data, (row) => 
             `    <tr>\n` +
-                _.map(row, (cell) => 
-                    `        <td>${cell}</td>`
-                )
-            .join("\n") +
-            `\n    </tr>`
-        ), "\n") +
+                _.join(
+                    _.map(row, (cell) => `        <td>${cell}</td>`), 
+                "\n") +
+            `\n    </tr>`), 
+        "\n") +
         `\n</table>`;
     writeHtml("data.html", newData);
 };
