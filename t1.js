@@ -64,11 +64,11 @@ export const transformToHTMLTable = (file) => {
         `<table>\n` +
         _.join(
             _.map(data, (row) => 
-            `    <tr>\n` +
+            `\t<tr>\n` +
                 _.join(
-                    _.map(row, (cell) => `        <td>${cell}</td>`), 
+                    _.map(row, (cell) => `\t\t<td>${cell}</td>`), 
                 "\n") +
-            `\n    </tr>`), 
+            `\n\t</tr>`), 
         "\n") +
         `\n</table>`;
     writeHtml("data.html", newData);
