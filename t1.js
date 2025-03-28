@@ -22,10 +22,28 @@ const writeHtml = (filepath, data) =>
     );
 
 // Insert Row (file, n, row)
-export const insertRow = (file, n, row) => {};
+export const insertRow = (file, n, row) => {
+  const data = readCSV(file);
+  const newData = _.concat(
+    _.slice(data, 0, n),
+    [row],
+    _.slice(data, n)
+  );
+  writeCSV(file, newData);
+};
 
 // Insert Column (file, n, column)
-export const insertColumn = (file, n, column) => {};
+export const insertColumn = (file, n, column) => {
+  const data = readCSV(file);
+  const newData = _.map(data, (row, index) => 
+    _.concat(
+      _.slice(row, 0, n),
+      [column[index]],
+      _.slice(row, n)
+    )
+  );
+  writeCSV(file, newData);
+};
 
 // Delete Row (file, n)
 export const deleteRow = (file, n) => {
