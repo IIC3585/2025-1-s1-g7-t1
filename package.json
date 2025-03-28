@@ -1,0 +1,26 @@
+{
+  "name": "2025-1-s1-g7-t1",
+  "version": "1.0.0",
+  "description": "> ## Grupo 7 > - Camila Gervasoni > - Juan Palma > - Giacomo Pasquali",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIC3585/2025-1-s1-g7-t1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIC3585/2025-1-s1-g7-t1/issues"
+  },
+  "homepage": "https://github.com/IIC3585/2025-1-s1-g7-t1#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21"
+  }
+}
