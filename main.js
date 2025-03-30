@@ -93,16 +93,20 @@ export const transformToHTMLTable = (file) => {
 };
 
 
-// Columns to Rows (file )
-export const columnsToRows = (file) => {
+// Transpose Matrix
+const transposeMatrix = (file) => {
     const data = readCSV(file);
     const newData = _.zip(...data);
     writeCSV(file, newData);
-};
-
-// Rows to Columns (file )
-export const rowsToColumns = (file) => {
-    const data = readCSV(file);
-    const newData = _.zip(...data);
-    writeCSV(file, newData);
+  };
+  
+  // Columns to Rows (file)
+  export const columnsToRows = (file) => {
+    transposeMatrix(file);
+    
+  };
+  
+  // Rows to Columns (file)
+  export const rowsToColumns = (file) => {
+    transposeMatrix(file);
 };
