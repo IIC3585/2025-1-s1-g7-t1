@@ -43,11 +43,11 @@ Inserta una nueva fila en el archivo CSV en la posición especificada.
 // Juan,25,Concepción
 // Camila,30,La Serena
 
-insertRow("data.csv", 1, ["Pedro", "28", "SF"]);
+insertRow("data.csv", 1, ["Giacomo", "28", "Santiago"]);
 
 Resultado:
 // nombre,edad,ciudad
-// Pedro,28,SF
+// Giacomo,28,Santiago
 // Juan,25,Concepción
 // Camila,30,La Serena
 ```
